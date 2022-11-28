@@ -1,0 +1,45 @@
+.header {
+    height: 100vh;
+    font-family: 'Playfair';
+    &__nav {        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 0;
+        &--title {
+            font-size: $big;
+            span {
+                color: $primaryColor;
+            }
+        }
+        .nav__ul {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            &--li {
+                list-style-type: none;
+                padding: 0 20px;
+                font-size: $normal;
+            }
+        }
+    }
+}
+.selected-lang {
+    margin-left: 20px;
+    padding: 5px 7px !important;
+    .flag_icon {
+        width: 50%;
+        padding-right: 5px;
+    }
+    &:active {
+        background-color: $primaryColor !important;
+        border-color: $primaryColor !important;
+    }
+}
+.flag_button {
+    display: flex !important;
+    justify-content: space-between;
+    .flag_icon--option {
+        width: 20%;
+    }
+}

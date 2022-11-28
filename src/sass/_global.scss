@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gradeBackground {
+    background-image: url('../images/background.svg');
+}
+.ownContainer {
+    @include make-container(150px);
+    background-color: $thirdColor;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    transition: $colorTransition;
+    &:hover {
+        color: $primaryColor;
+    }
+}
+
+h1, h2, h3, h4 {
+    color: white;
+}
