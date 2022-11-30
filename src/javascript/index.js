@@ -21,8 +21,8 @@ unitedKingdomFlag.addEventListener('click', (event) => {
     navLinksArr.map((el, index) => {
         el.innerHTML = navEnglish[index];
     });
-    showcaseTitle.innerHTML = `Welcome to my professional <br>portfolio as a web developer<span class="span--color">.</span>`;
-    showcaseBottomParagraph.innerHTML = `With broad knowledge in various technologies and<br> in various aspects, such as front-end and back-end,<br> I can transform your ideas into business`;
+    showcaseTitle.innerHTML = `Welcome to my professional portfolio as a web developer<span class="span--color">.</span>`;
+    showcaseBottomParagraph.innerHTML = `With broad knowledge in various technologies and in various aspects, such as front-end and back-end, I can transform your ideas into business`;
     allFlags.forEach(e => e.classList.remove('active'));
     unitedKingdomFlag.classList.add('active');
     localStorage.setItem('language', 'EN-GB');
@@ -34,8 +34,8 @@ function changeToEnglish() {
     navLinksArr.map((el, index) => {
         el.innerHTML = navEnglish[index];
     });
-    showcaseTitle.innerHTML = `Welcome to my professional <br>portfolio as a web developer<span class="span--color">.</span>`;
-    showcaseBottomParagraph.innerHTML = `With broad knowledge in various technologies and<br> in various aspects, such as front-end and back-end,<br> I can transform your ideas into business`;
+    showcaseTitle.innerHTML = `Welcome to my professional portfolio as a web developer<span class="span--color">.</span>`;
+    showcaseBottomParagraph.innerHTML = `With broad knowledge in various technologies and in various aspects, such as front-end and back-end, I can transform your ideas into business`;
     allFlags.forEach(e => e.classList.remove('active'));
     unitedKingdomFlag.classList.add('active');
 }

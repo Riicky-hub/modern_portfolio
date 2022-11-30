@@ -2,7 +2,7 @@
     height: 70%;
     font-family: 'Playfair';
     &__nav {        
-        margin: 20px 0;
+        margin: 20px 0 0 0;
         padding: 0 !important;
         &--title {
             font-size: $big;
@@ -45,5 +45,10 @@
     .dropdown-menu[data-bs-popper] {
         right: 0 !important;
         left: auto !important;
+    }
+    .header {
+        &__nav {
+            margin: 15px 0 0 0;
+        }
     }
 }

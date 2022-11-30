@@ -57,7 +57,7 @@ h1, h2, h3, h4, p {
   font-family: "Playfair";
 }
 .header__nav {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   padding: 0 !important;
 }
 .header__nav--title {
@@ -99,15 +99,19 @@ h1, h2, h3, h4, p {
     right: 0 !important;
     left: auto !important;
   }
+  .header__nav {
+    margin: 15px 0 0 0;
+  }
 }
 .showcase {
   margin: 40px 0;
 }
 .showcase__title {
-  margin: 60px 0;
+  margin: 0 0 60px 0;
   font-size: 4.5rem;
   font-weight: bold;
   letter-spacing: 7px;
+  width: 70%;
 }
 .showcase__bottom {
   margin: 40px 0;
@@ -117,6 +121,7 @@ h1, h2, h3, h4, p {
 }
 .showcase__bottom--paragraph {
   font-size: 1.4rem;
+  width: 30%;
 }
 .showcase__bottom .draw {
   position: relative;
@@ -135,6 +140,47 @@ h1, h2, h3, h4, p {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1306px) {
+  .showcase__title {
+    margin: 0 0 20px 0;
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 967px) {
+  .showcase__title {
+    width: 80%;
+    font-size: 3.2rem;
+  }
+  .showcase__bottom--paragraph {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 846px) {
+  .showcase__title {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 642px) {
+  .showcase__title {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 476px) {
+  .draw {
+    display: none;
+  }
+  .showcase__bottom--paragraph {
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .showcase__title {
+    font-size: 2.5rem;
   }
 }
 
