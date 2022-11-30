@@ -1,5 +1,5 @@
 .header {
-    height: 100vh;
+    height: 70%;
     font-family: 'Playfair';
     &__nav {        
         display: flex;
@@ -8,9 +8,6 @@
         padding: 35px 0;
         &--title {
             font-size: $big;
-            span {
-                color: $primaryColor;
-            }
         }
         .nav__ul {
             display: flex;

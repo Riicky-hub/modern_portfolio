@@ -8,8 +8,12 @@
     background-image: url('../images/background.svg');
 }
 .ownContainer {
-    @include make-container(150px);
+    @include make-container(10%);
+    padding-bottom: 3%;
     background-color: $thirdColor;
+}
+.borderBottom {
+    border-bottom: 7px solid $primaryColor;
 }
 
 .link {
@@ -21,6 +25,10 @@
     }
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
     color: white;
+}
+
+.span--color {
+    color: $primaryColor;
 }

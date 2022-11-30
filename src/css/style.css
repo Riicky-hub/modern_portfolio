@@ -18,11 +18,16 @@
 
 .ownContainer {
   width: 100%;
-  padding-right: 150px;
-  padding-left: 150px;
+  padding-right: 10%;
+  padding-left: 10%;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 3%;
   background-color: #222222;
+}
+
+.borderBottom {
+  border-bottom: 7px solid #BDFF00;
 }
 
 .link {
@@ -34,12 +39,16 @@
   color: #BDFF00;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   color: white;
 }
 
+.span--color {
+  color: #BDFF00;
+}
+
 .header {
-  height: 100vh;
+  height: 70%;
   font-family: "Playfair";
 }
 .header__nav {
@@ -50,9 +59,6 @@ h1, h2, h3, h4 {
 }
 .header__nav--title {
   font-size: 2.4rem;
-}
-.header__nav--title span {
-  color: #BDFF00;
 }
 .header__nav .nav__ul {
   display: flex;
@@ -84,6 +90,44 @@ h1, h2, h3, h4 {
 }
 .flag_button .flag_icon--option {
   width: 20%;
+}
+
+.showcase {
+  margin: 40px 0;
+}
+.showcase__title {
+  margin: 60px 0;
+  font-size: 4.5rem;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+.showcase__bottom {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showcase__bottom--paragraph {
+  font-size: 1.4rem;
+}
+.showcase__bottom .draw {
+  position: relative;
+}
+.showcase__bottom .draw--text {
+  position: absolute;
+  z-index: 1;
+  bottom: 47px;
+  left: 47px;
+  animation: spin 7s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

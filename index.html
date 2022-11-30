@@ -4,34 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Riicky-hub - Portfolio</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/libs/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="ownContainer gradeBackground">
+    <div class="ownContainer gradeBackground borderBottom">
         <header class="header">
             <nav class="header__nav">
-                <h1 class="header__nav--title">Riicky-<span>hub</span></h1>
+                <h1 class="header__nav--title">Riicky-<span class="span--color">hub</span></h1>
                 <ul class="nav__ul">
-                    <li class="nav__ul--li"><a href="#" class="link">Home</a></li>
-                    <li class="nav__ul--li"><a href="#" class="link">Projects</a></li>
-                    <li class="nav__ul--li"><a href="#" class="link">My skills</a></li>
-                    <li class="nav__ul--li"><a href="#" class="link">About me</a></li>
-                    <li class="nav__ul--li"><a href="#" class="link">Contact</a></li>
+                    <li class="nav__ul--li"><a href="#" class="link">Ínicio</a></li>
+                    <li class="nav__ul--li"><a href="#" class="link">Projetos</a></li>
+                    <li class="nav__ul--li"><a href="#" class="link">Habilidades</a></li>
+                    <li class="nav__ul--li"><a href="#" class="link">Sobre mim</a></li>
+                    <li class="nav__ul--li"><a href="#" class="link">Contato</a></li>
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle selected-lang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./src/images/icons/flag_brazil.png" class="flag_icon"></button>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item active flag_button" href="#">PT-BR<img src="./src/images/icons/flag_brazil.png" class="flag_icon--option" wn-Lang="portuguese"></a></li>
+                          <li><a class="dropdown-item active flag_button" wn-lang="portuguese" href="#">PT-BR<img src="./src/images/icons/flag_brazil.png" class="flag_icon--option"></a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item flag_button" href="#">EN-GB<img src="./src/images/icons/flag_UK.png" class="flag_icon--option" wn-Lang="english"></a></li>
+                          <li><a class="dropdown-item flag_button" href="#" wn-lang="english">EN-GB<img src="./src/images/icons/flag_UK.png" class="flag_icon--option"></a></li>
                         </ul>
                     </div>
                 </ul>
             </nav>
+            <div class="showcase">
+                <h2 class="showcase__title">Bem-vindo ao meu portfolio<br> profissional como programador web<span class="span--color">.</span></h2>
+                <div class="showcase__bottom">
+                    <p class="showcase__bottom--paragraph">Com conhecimento amplo em várias tecnologias<br> e em várias vertentes, como front-end e back-end<br> transformo suas ideias em négocios</p>
+                    <div class="draw">
+                        <img src="./src/images/draws/circle.svg" class="draw--circle" draggable="false">
+                        <img src="./src/images/draws/text.svg" class="draw--text" draggable="false">
+                    </div>
+                </div>
+            </div>
         </header>
     </div>
     <script src="./src/libs/popper/popper.min.js"></script>
     <script src="./src/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./src/javascript/index.js"></script>
 </body>
 </html>

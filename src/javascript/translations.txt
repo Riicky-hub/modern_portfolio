@@ -1,0 +1,18 @@
+/ Os textos são formatados para o HTML e segue um padrão /
+/ Esse arquivo não é utilizado na produção e pode ser alterado /
+
+<------- EN-GB --------->
+- Nav:
+Home - Projects - My skills - About me - Contact
+
+- Header:
+Welcome to my professional <br>portfolio as a web developer<span class="span--color">.</span>;
+With broad knowledge in various technologies and<br> in various aspects, such as front-end and back-end,<br> I can transform your ideas into business;
+
+<------- PT-BR --------->
+- Nav:
+Ínicio - Projetos - Habilidades - Sobre mim - Contato
+
+- Header:
+Bem-vindo ao meu portfolio<br> profissional como programador web<span class="span--color">.</span>;
+Com conhecimento amplo em várias tecnologias<br> e em várias vertentes, como front-end e back-end<br> transformo suas ideias em négocios;
