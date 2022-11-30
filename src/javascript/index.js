@@ -25,13 +25,14 @@ unitedKingdomFlag.addEventListener('click', (event) => {
     showcaseBottomParagraph.innerHTML = `With broad knowledge in various technologies and<br> in various aspects, such as front-end and back-end,<br> I can transform your ideas into business`;
     allFlags.forEach(e => e.classList.remove('active'));
     unitedKingdomFlag.classList.add('active');
+    localStorage.setItem('language', 'EN-GB');
 });
 
 // localStorage function
 function changeToEnglish() {
     selectedFlag.setAttribute('src', './src/images/icons/flag_UK.png');
     navLinksArr.map((el, index) => {
-        el.innerHTML = arr[index];
+        el.innerHTML = navEnglish[index];
     });
     showcaseTitle.innerHTML = `Welcome to my professional <br>portfolio as a web developer<span class="span--color">.</span>`;
     showcaseBottomParagraph.innerHTML = `With broad knowledge in various technologies and<br> in various aspects, such as front-end and back-end,<br> I can transform your ideas into business`;
@@ -39,8 +40,9 @@ function changeToEnglish() {
     unitedKingdomFlag.classList.add('active');
 }
 
-// window.onload(changeToEnglish());
-
+if(localStorage.language === 'EN-GB') {
+    changeToEnglish();
+}
 
 
 /* <-------Portuguese-------> */
@@ -56,6 +58,7 @@ brazilFlag.addEventListener('click', (event) => {
     showcaseBottomParagraph.innerHTML = `Com conhecimento amplo em várias tecnologias<br> e em várias vertentes, como front-end e back-end<br> transformo suas ideias em négocios`;
     allFlags.forEach(e => e.classList.remove('active'));
     brazilFlag.classList.add('active');
+    localStorage.setItem('language', 'PT-BR');
 });
 // localStorage function
 function changeToPortuguese() {
@@ -69,4 +72,6 @@ function changeToPortuguese() {
     brazilFlag.classList.add('active');
 }
 
-// window.onload(changeToPortuguese());
+if(localStorage.language === 'PT-BR') {
+    changeToPortuguese();
+}
