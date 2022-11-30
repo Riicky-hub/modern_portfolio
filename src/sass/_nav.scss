@@ -2,30 +2,24 @@
     height: 70%;
     font-family: 'Playfair';
     &__nav {        
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 35px 0;
+        margin: 20px 0;
+        padding: 0 !important;
         &--title {
             font-size: $big;
+            margin: 0;
         }
-        .nav__ul {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0;
-            &--li {
-                list-style-type: none;
-                padding: 0 20px;
-                font-size: $normal;
+        .navbar-nav {
+            padding: 10px 0;
+            .nav-item {
+                margin: 7px 15px;
             }
         }
     }
 }
 .selected-lang {
-    margin-left: 20px;
     padding: 5px 7px !important;
     .flag_icon {
-        width: 50%;
+        width: 30px;
         padding-right: 5px;
     }
     &:active {
@@ -38,5 +32,18 @@
     justify-content: space-between;
     .flag_icon--option {
         width: 20%;
+    }
+}
+
+// Responsividade
+
+// Hamburguer menu - 932px;
+@media only screen and (min-width: 992px) {
+    .navbar-nav {
+        align-items: center;
+    }
+    .dropdown-menu[data-bs-popper] {
+        right: 0 !important;
+        left: auto !important;
     }
 }

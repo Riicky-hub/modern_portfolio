@@ -8,7 +8,7 @@
     background-image: url('../images/background.svg');
 }
 .ownContainer {
-    @include make-container(10%);
+    @include make-container(7%);
     padding-bottom: 3%;
     background-color: $thirdColor;
 }

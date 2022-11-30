@@ -1,5 +1,5 @@
 // Text
-const navLinks = document.querySelectorAll('li.nav__ul--li > a.link');
+const navLinks = document.querySelectorAll('li.nav-item > a.link');
 const navLinksArr = Array.from(navLinks);
 const showcaseTitle = document.querySelector('.showcase__title');
 const showcaseBottomParagraph = document.querySelector('.showcase__bottom--paragraph');

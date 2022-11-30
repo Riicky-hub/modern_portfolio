@@ -18,8 +18,8 @@
 
 .ownContainer {
   width: 100%;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 7%;
+  padding-left: 7%;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 3%;
@@ -57,31 +57,25 @@ h1, h2, h3, h4, p {
   font-family: "Playfair";
 }
 .header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 35px 0;
+  margin: 20px 0;
+  padding: 0 !important;
 }
 .header__nav--title {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  margin: 0;
 }
-.header__nav .nav__ul {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0;
+.header__nav .navbar-nav {
+  padding: 10px 0;
 }
-.header__nav .nav__ul--li {
-  list-style-type: none;
-  padding: 0 20px;
-  font-size: 1.4rem;
+.header__nav .navbar-nav .nav-item {
+  margin: 7px 15px;
 }
 
 .selected-lang {
-  margin-left: 20px;
   padding: 5px 7px !important;
 }
 .selected-lang .flag_icon {
-  width: 50%;
+  width: 30px;
   padding-right: 5px;
 }
 .selected-lang:active {
@@ -97,6 +91,15 @@ h1, h2, h3, h4, p {
   width: 20%;
 }
 
+@media only screen and (min-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+  .dropdown-menu[data-bs-popper] {
+    right: 0 !important;
+    left: auto !important;
+  }
+}
 .showcase {
   margin: 40px 0;
 }

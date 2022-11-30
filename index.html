@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,61 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/libs/bootstrap/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="ownContainer gradeBackground borderBottom">
         <header class="header">
-            <nav class="header__nav">
-                <h1 class="header__nav--title">Riicky-<span class="span--color">hub</span></h1>
-                <ul class="nav__ul">
-                    <li class="nav__ul--li"><a href="#" class="link actived">Ínicio</a></li>
-                    <li class="nav__ul--li"><a href="#" class="link">Projetos</a></li>
-                    <li class="nav__ul--li"><a href="#" class="link">Habilidades</a></li>
-                    <li class="nav__ul--li"><a href="#" class="link">Sobre mim</a></li>
-                    <li class="nav__ul--li"><a href="#" class="link">Contato</a></li>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle selected-lang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./src/images/icons/flag_brazil.png" class="flag_icon"></button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                          <li><a class="dropdown-item active flag_button" wn-lang="portuguese" href="#">PT-BR<img src="./src/images/icons/flag_brazil.png" class="flag_icon--option"></a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item flag_button" href="#" wn-lang="english">EN-GB<img src="./src/images/icons/flag_UK.png" class="flag_icon--option"></a></li>
+
+
+
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg" style="background-color: transparent !important;">
+                <div class="container-fluid header__nav">
+                    <h1 class="header__nav--title">Riicky-<span class="span--color">hub</span></h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="link actived">Ínicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="link">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="link">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="link">Sobre mim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="link">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle selected-lang" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./src/images/icons/flag_brazil.png" class="flag_icon"></button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" style="width: fit-content;">
+                                      <li><a class="dropdown-item active flag_button" wn-lang="portuguese" href="#">PT-BR<img src="./src/images/icons/flag_brazil.png" class="flag_icon--option"></a></li>
+                                      <li><hr class="dropdown-divider"></li>
+                                      <li><a class="dropdown-item flag_button" href="#" wn-lang="english">EN-GB<img src="./src/images/icons/flag_UK.png" class="flag_icon--option"></a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
-                </ul>
+                </div>
             </nav>
+
+
+
+
             <div class="showcase">
-                <h2 class="showcase__title">Bem-vindo ao meu portfolio<br> profissional como programador web<span class="span--color">.</span></h2>
+                <h2 class="showcase__title">Bem-vindo ao meu portfolio<br> profissional como programador web<span
+                        class="span--color">.</span></h2>
                 <div class="showcase__bottom">
-                    <p class="showcase__bottom--paragraph">Com conhecimento amplo em várias tecnologias<br> e em várias vertentes, como front-end e back-end<br> transformo suas ideias em négocios</p>
+                    <p class="showcase__bottom--paragraph">Com conhecimento amplo em várias tecnologias<br> e em várias
+                        vertentes, como front-end e back-end<br> transformo suas ideias em négocios</p>
                     <div class="draw">
                         <img src="./src/images/draws/circle.svg" class="draw--circle" draggable="false">
                         <img src="./src/images/draws/text.svg" class="draw--text" draggable="false">
@@ -45,4 +76,5 @@
     <script src="./src/libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="./src/javascript/index.js"></script>
 </body>
+
 </html>
