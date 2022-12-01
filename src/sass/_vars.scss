@@ -14,7 +14,10 @@ $thirdColor: #222222;
 }
 
 // Fonts Sizes
+$small: 0.7rem;
+$nomral-small: 1rem;
 $normal: 1.4rem;
+$normal-big: 1.8rem;
 $big: 2.2rem;
 
 //Others 
@@ -27,4 +30,4 @@ $colorTransition: all 0.2s ease-in-out;
     padding-left: $padding-x;
     margin-right: auto;
     margin-left: auto;
-}
+};

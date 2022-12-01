@@ -6,13 +6,31 @@
 Home - Projects - My skills - About me - Contact
 
 - Header:
+* Title:
 Welcome to my professional <br>portfolio as a web developer<span class="span--color">.</span>;
+* Bottom:
 With broad knowledge in various technologies and<br> in various aspects, such as front-end and back-end,<br> I can transform your ideas into business;
+
+- Projects;
+* Header--info:
+The codes of my projects<br> are all available on GitHub
+My work as a programmer I take as an art, always paying attention to details.
+* header--button:
+View all projects
 
 <------- PT-BR --------->
 - Nav:
 Ínicio - Projetos - Habilidades - Sobre mim - Contato
 
-- Header:
+- Header;
+* Title:
 Bem-vindo ao meu portfolio<br> profissional como programador web<span class="span--color">.</span>;
+* Bottom:
 Com conhecimento amplo em várias tecnologias<br> e em várias vertentes, como front-end e back-end<br> transformo suas ideias em négocios;
+
+- Projects;
+* Header--info:
+Os códigos dos meus projetos<br> estão todos no GitHub
+Meu trabalho como programador eu levo como uma arte, sempre dando atenção aos detalhes.
+* header--button:
+Ver todos os projetos

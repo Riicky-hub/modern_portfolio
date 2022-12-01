@@ -1,0 +1,41 @@
+.projects {
+    border: 1px solid rgba($color: #F2F2F2, $alpha: 0.1);
+    padding: 15px 0;
+    &__header {
+        padding: 10px;
+        &--button {
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: flex-end;
+            .eclipse1 {
+                position: absolute;
+                right: 162px;
+            }
+            .eclipse2 {
+                position: absolute;
+                right: 153px;
+            }
+            .eclipse__link {
+                display: inline;
+                z-index: 2;
+                text-decoration: none;
+                color: white;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+// Responsividade 
+@media only screen and (max-width: 520px) {
+    .projects__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects__header--button {
+        justify-content: center;
+        padding: 10px 0;
+    }
+}
