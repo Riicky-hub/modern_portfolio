@@ -22,6 +22,7 @@ $big: 2.2rem;
 
 //Others 
 $colorTransition: all 0.2s ease-in-out;
+$borderLine: 1px solid rgba($color: #F2F2F2, $alpha: 0.1);
 
 // Mixins 
 @mixin make-container($padding-x) {

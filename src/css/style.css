@@ -53,6 +53,10 @@ h1, h2, h3, h4, p {
   color: #BDFF00;
 }
 
+.hide {
+  display: none;
+}
+
 .header {
   height: 70%;
 }
@@ -185,10 +189,10 @@ h1, h2, h3, h4, p {
 }
 .projects {
   border: 1px solid rgba(242, 242, 242, 0.1);
-  padding: 15px 0;
+  padding: 15px 0 0 0;
 }
 .projects__header {
-  padding: 10px;
+  padding: 10px 10px 25px 10px;
 }
 .projects__header--button {
   display: flex;
@@ -211,6 +215,40 @@ h1, h2, h3, h4, p {
   color: white;
   white-space: nowrap;
 }
+.projects__bottom {
+  border-top: 1px solid rgba(242, 242, 242, 0.1);
+}
+.projects__bottom .bottom__list {
+  margin: 0;
+  padding: 0;
+}
+.projects__bottom .bottom__list--item {
+  list-style-type: none;
+  border: 1px solid rgba(242, 242, 242, 0.1);
+  padding: 50px 50px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.projects__bottom .bottom__list--item:hover {
+  border-left: 10px solid #BDFF00;
+  background-color: rgba(189, 255, 34, 0.1);
+}
+.projects__bottom .bottom__list--link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.projects__bottom .bottom__list--img {
+  width: 200px;
+  position: absolute;
+  top: -60px;
+  right: 15%;
+  opacity: 0;
+  rotate: -15deg;
+  border: 1px solid #BDFF00;
+  z-index: 2;
+}
 
 @media only screen and (max-width: 520px) {
   .projects__header {
@@ -221,6 +259,34 @@ h1, h2, h3, h4, p {
   .projects__header--button {
     justify-content: center;
     padding: 10px 0;
+  }
+}
+.addIn {
+  animation: deslocateIn 1.5s;
+}
+
+.addOut {
+  animation: deslocateOut 1.2s;
+}
+
+@keyframes deslocateIn {
+  from {
+    right: 0;
+    opacity: 0;
+  }
+  to {
+    right: 15%;
+    opacity: 1;
+  }
+}
+@keyframes deslocateOut {
+  0% {
+    right: 15%;
+    opacity: 1;
+  }
+  100% {
+    right: 0;
+    opacity: 0;
   }
 }
 

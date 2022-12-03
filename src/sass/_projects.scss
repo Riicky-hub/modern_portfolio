@@ -1,8 +1,8 @@
 .projects {
-    border: 1px solid rgba($color: #F2F2F2, $alpha: 0.1);
-    padding: 15px 0;
+    border: $borderLine;
+    padding: 15px 0 0 0;
     &__header {
-        padding: 10px;
+        padding: 10px 10px 25px 10px;
         &--button {
             display: flex;
             align-items: center;
@@ -25,6 +25,40 @@
             }
         }
     }
+    &__bottom {
+        border-top: $borderLine;
+        .bottom__list {
+            margin: 0;
+            padding: 0;
+            &--item {
+                list-style-type: none;
+                border: $borderLine;
+                padding: 50px 50px;
+                transition: $colorTransition;
+                position: relative;
+                &:hover {
+                    border-left: 10px solid $primaryColor;
+                    background-color: rgba($color: #BDFF22, $alpha: 0.1);
+                }
+            }
+            &--link {
+                color: white;
+                text-decoration: none;
+                font-size: $normal-big;
+                font-weight: bold;
+            }
+            &--img {
+                width: 200px;
+                position: absolute;
+                top: -60px;
+                right: 15%;
+                opacity: 0;
+                rotate: -15deg;
+                border: 1px solid $primaryColor;
+                z-index: 2;
+            }
+        }
+    }
 }
 
 // Responsividade 
@@ -37,5 +71,34 @@
     .projects__header--button {
         justify-content: center;
         padding: 10px 0;
+    }
+}
+
+// Animate aditional image 260px
+
+.addIn {
+    animation: deslocateIn 1.5s;
+}
+.addOut {
+    animation: deslocateOut 1.2s
+}
+@keyframes deslocateIn {
+    from {
+        right: 0;
+        opacity: 0;
+    }
+    to {
+        right: 15%;
+        opacity: 1;
+    }
+}
+@keyframes deslocateOut {
+    0% {
+        right: 15%;
+        opacity: 1;
+    }
+    100% {
+        right: 0;
+        opacity: 0;
     }
 }
