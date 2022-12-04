@@ -291,6 +291,16 @@ h1, h2, h3, h4, p {
     opacity: 1;
   }
 }
+.skills__header--info {
+  margin-bottom: 10px;
+}
+.skills__header ul {
+  padding-left: 1rem;
+}
+.skills__header ul li {
+  list-style-type: none;
+  color: white;
+}
 .skills__bottom {
   display: flex;
   justify-content: center;

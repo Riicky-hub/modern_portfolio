@@ -18,6 +18,20 @@ My work as a programmer I take as an art, always paying attention to details.
 * header--button:
 View all projects
 
+- Skills;
+* Title:
+My Skills
+* aboutMe:
+I constantly grow my skills on IT/Development, B1 english and knowledge of several programming languages, always being flexible and learning new methodologies to improve myself. View my stack on the <span class="span--color">Mind Map Board</span> right bellow!
+* Info:
+I'm studying Full Stack MERN and getting more knowledge of technologies like:
+* List:
+- MongoDB, Express, React, Node and layouts Front-end
+- Workflow automation
+- Front-end and Back-end integration
+- Development and testing with Express, Postgres and APIs
+- NoSQL and database
+
 <------- PT-BR --------->
 - Nav:
 Ínicio - Projetos - Habilidades - Sobre mim - Contato
@@ -34,3 +48,17 @@ Os códigos dos meus projetos<br> estão todos no GitHub
 Meu trabalho como programador eu levo como uma arte, sempre dando atenção aos detalhes.
 * header--button:
 Ver todos os projetos
+
+- Skills;
+* Title:
+Minhas Habilidades
+* aboutMe:
+Possuo carreira em evolução na área de TI/Desenvolvimento, inglês avançado e conhecimento em diversas linguagens de programação, sempre sendo flexível e aprendendo metodologias novas para me aprimorar. Visualize minha stack no <span class="span--color">Mind Map Board</span> logo abaixo!
+* Info:
+Estou cursando Full Stack MERN e ganhando mais conhecimento para aperfeiçoamento das minhas skills em:
+* List:
+- MongoDB, Express, React, Node e layouts Front-end
+- Automatização de fluxos de trabalho
+- Integração Front e Back-end
+- Desenvolvimento e testes com Express, Postgres e APIs
+- NoSQL e bancos de dados
