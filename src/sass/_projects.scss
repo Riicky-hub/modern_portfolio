@@ -52,7 +52,7 @@
                 position: absolute;
                 top: -60px;
                 right: 15%;
-                opacity: 0;
+                display: none;
                 rotate: -15deg;
                 border: 1px solid $primaryColor;
                 z-index: 2;
@@ -73,14 +73,22 @@
         padding: 10px 0;
     }
 }
+@media only screen and (max-width: 767px) {
+    .bottom__list--img {
+        left: -10000px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .bottom__list--item {
+        padding: 40px 35px !important;
+        font-size: 1.6rem;
+    }
+}
 
-// Animate aditional image 260px
+// Animate aditional image 260x200px
 
 .addIn {
-    animation: deslocateIn 1.5s;
-}
-.addOut {
-    animation: deslocateOut 1.2s
+    animation: deslocateIn 1.2s;
 }
 @keyframes deslocateIn {
     from {
@@ -90,15 +98,5 @@
     to {
         right: 15%;
         opacity: 1;
-    }
-}
-@keyframes deslocateOut {
-    0% {
-        right: 15%;
-        opacity: 1;
-    }
-    100% {
-        right: 0;
-        opacity: 0;
     }
 }

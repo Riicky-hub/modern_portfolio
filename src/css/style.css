@@ -187,6 +187,11 @@ h1, h2, h3, h4, p {
     font-size: 2.5rem;
   }
 }
+@media only screen and (max-width: 350px) {
+  .showcase__title {
+    font-size: 2rem;
+  }
+}
 .projects {
   border: 1px solid rgba(242, 242, 242, 0.1);
   padding: 15px 0 0 0;
@@ -244,7 +249,7 @@ h1, h2, h3, h4, p {
   position: absolute;
   top: -60px;
   right: 15%;
-  opacity: 0;
+  display: none;
   rotate: -15deg;
   border: 1px solid #BDFF00;
   z-index: 2;
@@ -261,12 +266,19 @@ h1, h2, h3, h4, p {
     padding: 10px 0;
   }
 }
-.addIn {
-  animation: deslocateIn 1.5s;
+@media only screen and (max-width: 767px) {
+  .bottom__list--img {
+    left: -10000px;
+  }
 }
-
-.addOut {
-  animation: deslocateOut 1.2s;
+@media only screen and (max-width: 460px) {
+  .bottom__list--item {
+    padding: 40px 35px !important;
+    font-size: 1.6rem;
+  }
+}
+.addIn {
+  animation: deslocateIn 1.2s;
 }
 
 @keyframes deslocateIn {
@@ -277,16 +289,6 @@ h1, h2, h3, h4, p {
   to {
     right: 15%;
     opacity: 1;
-  }
-}
-@keyframes deslocateOut {
-  0% {
-    right: 15%;
-    opacity: 1;
-  }
-  100% {
-    right: 0;
-    opacity: 0;
   }
 }
 

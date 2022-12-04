@@ -96,21 +96,18 @@ AOS.init();
 function smoothLinkAnimation(position) {
     const el = document.querySelector(`a[wn-position=${position}]`)
     const img = document.querySelector(`img[wn-position=${position}]`)
-
+    
     el.addEventListener('mouseover', deslocateIn);
     el.addEventListener('mouseout', deslocateOut);
     function deslocateIn() {
-        img.classList.remove('addOut');
+        img.style.display = 'block';
         img.classList.add('addIn');
-        img.style.cssText = 'opacity: 1;'
     }
     function deslocateOut() {
-        img.classList.remove('addIn');
-        img.classList.add('addOut');
-        setTimeout(() => {
-            img.style.cssText = 'opacity: 0;'
-            // img.classList.add('hide');
-        }, 1200);
+        img.style.display = 'none';
     }
 }
 smoothLinkAnimation('first');
+smoothLinkAnimation('second');
+smoothLinkAnimation('third');
+smoothLinkAnimation('fourth');
