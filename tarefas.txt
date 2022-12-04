@@ -1,0 +1,4 @@
+/* Tarefas para Hoje */
+
+- readicionar os textos HTML
+- finalizar parte da Skills com Miro
