@@ -32,6 +32,24 @@ I'm studying Full Stack MERN and getting more knowledge of technologies like:
 - Development and testing with Express, Postgres and APIs
 - NoSQL and database
 
+- About Me;
+* Title:
+My development methodology<span class="span--color">!</span>
+I learned from many professionals and teachers in the field of web development, at educational institutions such as <strong>'Escola Britânica de Artes Criativas e Tecnologia'(EBAC)</strong>, <strong>Alura</strong> and <strong>Udemy</strong> courses. My main methods are:
+* Cards:
+- With a well-written, organized and descriptive code, it's a synonymous of efficient work
+- Using MongoDB, Express, React and Node, you can build any application in a modern way
+- For each new function or change, there will be tests to ensure the security of the application
+- At the end of all development, a project build will be created to always achieve the best optimization
+
+- Footer;
+* Header:
+Let's get your <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30">business</span><br> where you <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">want</span> it to be
+* Bottom:
+Professional contact<span class="span--color">:</span>
+My social networks<span class="span--color">:</span>
+
+
 <------- PT-BR --------->
 - Nav:
 Ínicio - Projetos - Habilidades - Sobre mim - Contato
@@ -62,3 +80,20 @@ Estou cursando Full Stack MERN e ganhando mais conhecimento para aperfeiçoament
 - Integração Front e Back-end
 - Desenvolvimento e testes com Express, Postgres e APIs
 - NoSQL e bancos de dados
+
+- About Me;
+* Title:
+Minha metodologia de desenvolvimento<span class="span--color">!</span>
+Aprendi com vários profissionais e professores da área de desenvolvimento web, nas instituições de ensino como a <strong>Escola Britânica de Artes Criativas</strong>, <strong>Alura</strong> e cursos da <strong>Udemy</strong>. Meus principais métodos são:
+* Cards:
+- Com um código bem escrito, organizado e descritivo, é sinônimo de um trabalho eficiente
+- Utilizando MongoDB, Express, React e Node, poderá construir qualquer aplicação de um jeito moderno
+- Para cada função nova ou alteração, haverá testes para garantir a segurança da aplicação
+- Ao final de todo desenvolvimento, será criado uma build do projeto para atingir sempre a melhor otimização
+
+- Footer;
+* Header:
+<h2>Transforme suas <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">ideias</span><br> em <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">négocios</span> lucrativos</h2>
+* Bottom:
+Contato profissional<span class="span--color">:</span>
+Minhas redes sociais<span class="span--color">:</span>

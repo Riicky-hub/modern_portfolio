@@ -10,7 +10,7 @@
 }
 .ownContainer {
     @include make-container(7%);
-    padding-bottom: 3%;
+    // padding-bottom: 3%;
     background-color: $thirdColor;
 }
 .borderBottom {

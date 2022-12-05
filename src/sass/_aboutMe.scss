@@ -1,0 +1,109 @@
+.aboutMe {
+    &__header {
+        border: $borderLine;
+        padding: 40px 30px;
+        p {
+            margin: 0;
+        }
+    }
+    &__bottom {
+        &--cards {
+            margin: 0 !important;
+        }
+        // padding-bottom: 20px;
+    }
+    .cards {
+        &__card {
+            border: $borderLine;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            padding: 0 20px;
+            position: relative;
+            &:last-child {
+                border-right: $borderLine;
+            }
+        }
+        &__imgs {
+            position: relative;
+            padding: 45px 0 65px 0;
+            img:first-child {
+                display: block;
+            }
+            img {
+                position: absolute;
+            }
+            .img {
+                &__orange {
+                    &--second {
+                        left: 0px;
+                        top: 42px;
+                    }
+                    &--third {
+                        left: 8px;
+                        top: 39px;
+                    }
+                    &--fourth {
+                        left: 12px;
+                        top: 36px;
+                    }
+                }
+                &__green {
+                    &--second {
+                        left: 3px;
+                        top: 43px;
+                    }
+                    &--third {
+                        left: 6px;
+                        top: 41px;
+                    }
+                    &--fourth {
+                        left: 9px;
+                        top: 39px;
+                    }
+                }
+                &__blue {
+                    &--second {
+                        left: 3px;
+                        top: 43px;
+                    }
+                    &--third {
+                        left: 6px;
+                        top: 41px;
+                    }
+                    &--fourth {
+                        left: 9px;
+                        top: 39px;
+                    }
+                }
+                &__pink {
+                    &--second {
+                        left: 3px;
+                        top: 43px;
+                    }
+                    &--third {
+                        left: 6px;
+                        top: 41px;
+                    }
+                    &--fourth {
+                        left: 9px;
+                        top: 39px;
+                    }
+                }
+            }
+        }
+        &__title {
+            font-size: $normal;
+        }
+        &__paragraph {
+            font-size: $small;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .cards__card {
+        border: $borderLine !important;
+    }
+}

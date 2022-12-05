@@ -20,12 +20,21 @@ const skillsAboutMe = document.querySelector('.skills__header--aboutMe');
 const skillsInfo = document.querySelector('.skills__header--info');
 const skillsListItems = document.querySelectorAll('.skills__header--list > li');
 const skillsListItemsArr = Array.from(skillsListItems);
+/* About Me */
+
+/* Footer */
+const footerNavLinks = document.querySelectorAll('a[wn-footer]');
+const footerNavLinksArr = Array.from(footerNavLinks);
+const footerContact = document.querySelectorAll('.footer__div--contact');
+const footerContactArr = Array.from(footerContact);
+const footerTitle = document.querySelector('.footer__title > h2');
 
 /* <-------English-------> */
 // localStorage function
 function changeToEnglish() {
     const navEnglish = ['Home', 'Projects', 'My skills', 'About me', 'Contact'];
     const skillsEnglish = ['MongoDB, Express, React, Node and layouts Front-end', 'Workflow automation', 'Front-end and Back-end integration', 'Development and testing with Express, Postgres and APIs', 'NoSQL and database'];
+    const footerEnglish = ['Professional contact<span class="span--color">:</span>', 'My social networks<span class="span--color">:</span>'];
 
     selectedFlag.setAttribute('src', './src/images/icons/flag_UK.png');
     navLinksArr.map((el, index) => {
@@ -42,6 +51,18 @@ function changeToEnglish() {
     skillsListItemsArr.map((el, index) => {
         el.innerHTML = `<span class="span--color">-</span> ${skillsEnglish[index]}`;
     });
+
+
+
+    footerTitle.innerHTML = `Let's get your <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30">business</span><br> where you <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">want</span> it to be`;
+    footerContactArr.map((el, index) => {
+        el.innerHTML = footerEnglish[index];
+    });
+    footerNavLinksArr.map((el, index) => {
+        el.innerHTML = navEnglish[index];
+    });
+
+
     allFlags.forEach(e => e.classList.remove('active'));
     unitedKingdomFlag.classList.add('active');
 }
@@ -64,6 +85,8 @@ if(localStorage.language === 'EN-GB') {
 function changeToPortuguese() {
     const navBrazil = ['Ínicio', 'Projetos', 'Habilidades', 'Sobre mim', 'Contato'];
     const skillsBrazil = ['MongoDB, Express, React, Node e layouts Front-end', 'Automatização de fluxos de trabalho', 'Integração Front e Back-end', 'Desenvolvimento e testes com Express, Postgres e APIs', 'NoSQL e bancos de dados'];
+    const footerBrazil = ['Contato profissional<span class="span--color">:</span>', 'Minhas redes sociais<span class="span--color">:</span>'];
+
     selectedFlag.setAttribute('src', './src/images/icons/flag_brazil.png');
     navLinksArr.map((el, index) => {
         el.innerHTML = navBrazil[index];
@@ -79,6 +102,18 @@ function changeToPortuguese() {
     skillsListItemsArr.map((el, index) => {
         el.innerHTML = `<span class="span--color">-</span> ${skillsBrazil[index]}`;
     });
+
+
+
+    footerTitle.innerHTML = `Transforme suas <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">ideias</span><br> em <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">négocios</span> lucrativos`;
+    footerContactArr.map((el, index) => {
+        el.innerHTML = footerBrazil[index];
+    });
+    footerNavLinksArr.map((el, index) => {
+        el.innerHTML = navBrazil[index];
+    });
+
+
     allFlags.forEach(e => e.classList.remove('active'));
     brazilFlag.classList.add('active');
 }
@@ -95,7 +130,9 @@ if(localStorage.language === 'PT-BR') {
 }
 
 // AOS
-AOS.init();
+AOS.init({
+    offset: 300
+});
 
 // Animações
 function smoothLinkAnimation(position) {
