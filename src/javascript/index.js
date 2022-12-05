@@ -21,6 +21,10 @@ const skillsInfo = document.querySelector('.skills__header--info');
 const skillsListItems = document.querySelectorAll('.skills__header--list > li');
 const skillsListItemsArr = Array.from(skillsListItems);
 /* About Me */
+const aboutMeTitle = document.querySelector('.aboutMe__header > h2');
+const aboutMeDesc = document.querySelector('.aboutMe__header > p');
+const aboutMeCards = document.querySelectorAll('.cards__paragraph');
+const aboutMeCardsArr = Array.from(aboutMeCards);
 
 /* Footer */
 const footerNavLinks = document.querySelectorAll('a[wn-footer]');
@@ -35,6 +39,7 @@ function changeToEnglish() {
     const navEnglish = ['Home', 'Projects', 'My skills', 'About me', 'Contact'];
     const skillsEnglish = ['MongoDB, Express, React, Node and layouts Front-end', 'Workflow automation', 'Front-end and Back-end integration', 'Development and testing with Express, Postgres and APIs', 'NoSQL and database'];
     const footerEnglish = ['Professional contact<span class="span--color">:</span>', 'My social networks<span class="span--color">:</span>'];
+    const aboutMeEnglish = ['With a well-written, organized and descriptive code, it is a synonymous of efficient work', 'Using MongoDB, Express, React and Node, you can build any application in a modern way', 'For each new function or change, there will be tests to ensure the security of the application', 'At the end of all development, a project build will be created to always achieve the best optimization'];
 
     selectedFlag.setAttribute('src', './src/images/icons/flag_UK.png');
     navLinksArr.map((el, index) => {
@@ -51,8 +56,11 @@ function changeToEnglish() {
     skillsListItemsArr.map((el, index) => {
         el.innerHTML = `<span class="span--color">-</span> ${skillsEnglish[index]}`;
     });
-
-
+    aboutMeTitle.innerHTML = `My development methodology<span class="span--color">!</span>`;
+    aboutMeDesc.innerHTML = `I learned from many professionals and teachers in the field of web development, at educational institutions such as <strong>'Escola Britânica de Artes Criativas e Tecnologia'(EBAC)</strong>, <strong>Alura</strong> and <strong>Udemy</strong> courses. My main methods are:`;
+    aboutMeCardsArr.map((el, index) => {
+        el.innerHTML = aboutMeEnglish[index];
+    });
 
     footerTitle.innerHTML = `Let's get your <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30">business</span><br> where you <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">want</span> it to be`;
     footerContactArr.map((el, index) => {
@@ -86,6 +94,7 @@ function changeToPortuguese() {
     const navBrazil = ['Ínicio', 'Projetos', 'Habilidades', 'Sobre mim', 'Contato'];
     const skillsBrazil = ['MongoDB, Express, React, Node e layouts Front-end', 'Automatização de fluxos de trabalho', 'Integração Front e Back-end', 'Desenvolvimento e testes com Express, Postgres e APIs', 'NoSQL e bancos de dados'];
     const footerBrazil = ['Contato profissional<span class="span--color">:</span>', 'Minhas redes sociais<span class="span--color">:</span>'];
+    const aboutMeBrazil = ['Com um código bem escrito, organizado e descritivo, é sinônimo de um trabalho eficiente', 'Utilizando MongoDB, Express, React e Node, poderá construir qualquer aplicação de um jeito moderno', 'Para cada função nova ou alteração, haverá testes para garantir a segurança da aplicação', 'Ao final de todo desenvolvimento, será criado uma build do projeto para atingir sempre a melhor otimização'];
 
     selectedFlag.setAttribute('src', './src/images/icons/flag_brazil.png');
     navLinksArr.map((el, index) => {
@@ -102,9 +111,11 @@ function changeToPortuguese() {
     skillsListItemsArr.map((el, index) => {
         el.innerHTML = `<span class="span--color">-</span> ${skillsBrazil[index]}`;
     });
-
-
-
+    aboutMeTitle.innerHTML = `Minha metodologia de desenvolvimento<span class="span--color">!</span>`;
+    aboutMeDesc.innerHTML = `Aprendi com vários profissionais e professores da área de desenvolvimento web, nas instituições de ensino como a <strong>Escola Britânica de Artes Criativas</strong>, <strong>Alura</strong> e cursos da <strong>Udemy</strong>. Meus principais métodos são:`;
+    aboutMeCardsArr.map((el, index) => {
+        el.innerHTML = aboutMeBrazil[index];
+    });
     footerTitle.innerHTML = `Transforme suas <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">ideias</span><br> em <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">négocios</span> lucrativos`;
     footerContactArr.map((el, index) => {
         el.innerHTML = footerBrazil[index];
