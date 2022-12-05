@@ -1,2 +1,2 @@
 # modern_portfolio
-tasks: alterar links e Readme
+tasks: alterar links, sistema de modulos no javascript, webpack e Readme
