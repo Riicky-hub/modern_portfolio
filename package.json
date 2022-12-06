@@ -4,7 +4,8 @@
   "description": "new version of my portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./src/sass/style.scss ./src/css/style.css --watch"
+    "sass": "sass ./src/sass/style.scss ./src/css/style.css --watch",
+    "build": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,20 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "aos": "^2.3.4",
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "core-js": "^3.26.1",
+    "regenerator-runtime": "^0.13.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.2",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }

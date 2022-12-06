@@ -1,8 +1,8 @@
 // Options
 const selectedFlag = document.querySelector('.selected-lang > .flag_icon');
 const allFlags = document.querySelectorAll('[wn-lang]');
-const brazilFlag = document.querySelector('[wn-lang=portuguese]');
 const unitedKingdomFlag = document.querySelector('[wn-lang=english]');
+
 // Text
 /* Nav */
 const navLinks = document.querySelectorAll('li.nav-item > a.link');
@@ -33,9 +33,8 @@ const footerContact = document.querySelectorAll('.footer__div--contact');
 const footerContactArr = Array.from(footerContact);
 const footerTitle = document.querySelector('.footer__title > h2');
 
-/* <-------English-------> */
 // localStorage function
-function changeToEnglish() {
+export default function changeToEnglish() {
     const navEnglish = ['Home', 'Projects', 'My skills', 'About me', 'Contact'];
     const skillsEnglish = ['MongoDB, Express, React, Node and layouts Front-end', 'Workflow automation', 'Front-end and Back-end integration', 'Development and testing with Express, Postgres and APIs', 'NoSQL and database'];
     const footerEnglish = ['Professional contact<span class="span--color">:</span>', 'My social networks<span class="span--color">:</span>'];
@@ -74,93 +73,3 @@ function changeToEnglish() {
     allFlags.forEach(e => e.classList.remove('active'));
     unitedKingdomFlag.classList.add('active');
 }
-
-// Click event to change language
-unitedKingdomFlag.addEventListener('click', (event) => {
-    event.preventDefault();
-    changeToEnglish();
-    localStorage.setItem('language', 'EN-GB');
-});
-
-if(localStorage.language === 'EN-GB') {
-    changeToEnglish();
-}
-
-
-/* <-------Portuguese-------> */
-
-// localStorage function
-function changeToPortuguese() {
-    const navBrazil = ['Ínicio', 'Projetos', 'Habilidades', 'Sobre mim', 'Contato'];
-    const skillsBrazil = ['MongoDB, Express, React, Node e layouts Front-end', 'Automatização de fluxos de trabalho', 'Integração Front e Back-end', 'Desenvolvimento e testes com Express, Postgres e APIs', 'NoSQL e bancos de dados'];
-    const footerBrazil = ['Contato profissional<span class="span--color">:</span>', 'Minhas redes sociais<span class="span--color">:</span>'];
-    const aboutMeBrazil = ['Com um código bem escrito, organizado e descritivo, é sinônimo de um trabalho eficiente', 'Utilizando MongoDB, Express, React e Node, poderá construir qualquer aplicação de um jeito moderno', 'Para cada função nova ou alteração, haverá testes para garantir a segurança da aplicação', 'Ao final de todo desenvolvimento, será criado uma build do projeto para atingir sempre a melhor otimização'];
-
-    selectedFlag.setAttribute('src', './src/images/icons/flag_brazil.png');
-    navLinksArr.map((el, index) => {
-        el.innerHTML = navBrazil[index];
-    });
-    showcaseTitle.innerHTML = `Bem-vindo ao meu portfolio<br> profissional como programador web<span class="span--color">.</span>`;
-    showcaseBottomParagraph.innerHTML = `Com conhecimento amplo em várias tecnologias<br> e em várias vertentes, como front-end e back-end<br> transformo suas ideias em négocios`;
-    projectsHeaderInfoTitle.innerHTML = `Os códigos dos meus projetos<br> estão todos no GitHub`;
-    projectsHeaderInfoParagraph.innerHTML = `Meu trabalho como programador eu levo como uma arte, sempre dando atenção aos detalhes.`;
-    eclipseLink.innerHTML = `Ver todos os projetos <img src="./src/images/draws/Eclipse(blackAndWhite)/Arrow.svg" class="eclipse__arrow">`;
-    skillsTitle.innerHTML = `Minhas Habilidades`;
-    skillsAboutMe.innerHTML = `Possuo carreira em evolução na área de TI/Desenvolvimento, inglês avançado e conhecimento em diversas linguagens de programação, sempre sendo flexível e aprendendo metodologias novas para me aprimorar. Visualize minha stack no <span class="span--color">Mind Map Board</span> logo abaixo!`;
-    skillsInfo.innerHTML = `Estou cursando Full Stack MERN e ganhando mais conhecimento para aperfeiçoamento das minhas skills em:`;
-    skillsListItemsArr.map((el, index) => {
-        el.innerHTML = `<span class="span--color">-</span> ${skillsBrazil[index]}`;
-    });
-    aboutMeTitle.innerHTML = `Minha metodologia de desenvolvimento<span class="span--color">!</span>`;
-    aboutMeDesc.innerHTML = `Aprendi com vários profissionais e professores da área de desenvolvimento web, nas instituições de ensino como a <strong>Escola Britânica de Artes Criativas</strong>, <strong>Alura</strong> e cursos da <strong>Udemy</strong>. Meus principais métodos são:`;
-    aboutMeCardsArr.map((el, index) => {
-        el.innerHTML = aboutMeBrazil[index];
-    });
-    footerTitle.innerHTML = `Transforme suas <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">ideias</span><br> em <span class="span--color" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000" data-aos-delay="30" data-aos-offset="250">négocios</span> lucrativos`;
-    footerContactArr.map((el, index) => {
-        el.innerHTML = footerBrazil[index];
-    });
-    footerNavLinksArr.map((el, index) => {
-        el.innerHTML = navBrazil[index];
-    });
-
-
-    allFlags.forEach(e => e.classList.remove('active'));
-    brazilFlag.classList.add('active');
-}
-
-// Click event to change language
-brazilFlag.addEventListener('click', (event) => {
-    event.preventDefault();
-    changeToPortuguese();
-    localStorage.setItem('language', 'PT-BR');
-});
-
-if(localStorage.language === 'PT-BR') {
-    changeToPortuguese();
-}
-
-// AOS
-AOS.init({
-    offset: 300
-});
-
-// Animações
-function smoothLinkAnimation(position) {
-    const el = document.querySelector(`a[wn-position=${position}]`)
-    const img = document.querySelector(`img[wn-position=${position}]`)
-    
-    el.addEventListener('mouseover', deslocateIn);
-    el.addEventListener('mouseout', deslocateOut);
-    function deslocateIn() {
-        img.style.display = 'block';
-        img.classList.add('addIn');
-    }
-    function deslocateOut() {
-        img.style.display = 'none';
-    }
-}
-smoothLinkAnimation('first');
-smoothLinkAnimation('second');
-smoothLinkAnimation('third');
-smoothLinkAnimation('fourth');
