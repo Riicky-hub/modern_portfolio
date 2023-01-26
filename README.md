@@ -1,6 +1,6 @@
 # README
 ## LiveServer(GitHub Pages)
-Link para acessar o site - [Portfolio](https://riicky-hub.github.io/modern_portfolio/)
+Link para acessar o site - [Portfolio](https://riicky-hub.github.io/portfolio/)
 
 ## Referências
 
