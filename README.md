@@ -1,25 +1,25 @@
-# README
-## LiveServer(GitHub Pages)
-Link para acessar o site - [Portfolio](https://riicky-hub.github.io/portfolio/)
+# Meu Portfolio 🧑‍💻 
 
-## Referências
+- Acesse: https://riicky-hub.github.io/portfolio/
+- Meu portfolio pessoal, onde você encontrará meus projetos finalizados e os que estão em desenvolvimento. 
+- Gosto de sempre está aprimorando meus projetos, então poucos vão está finalizados. Mas é possível ter uma ideia de como programo e como boto minhas ideias no papel e torno elas em possíveis futuros négocios!
 
-_Fontes do Google Fonts - [GoogleFonts](https://fonts.google.com/)_  
-_Baseado em design do Figma -  [Himanshu](https://www.figma.com/community/file/1162007334570358092)._  
-_Ilustrações e ícones vem do Icons8 - [Icons8](https://icons8.com/)_  
-_Mind Map - [Miro](https://miro.com/pt/)_  
+## Referência 🔖
 
+#### *- Tento fazer sempre meus projetos, respeitando a propriedade intelectual de seus devidos criadores*
 
-## Developer area
+### Fonts:  
+- [GoogleFonts](https://fonts.google.com/)  
 
-| Dev.Dependencies | Dependencies |
-|:-------------:|:-------------:|
-| Webpack | Bootstrap |
-| Babel | FontAwesome |
-| SASS | AOS |
+### Design (Figma):
+- [Himanshu](https://www.figma.com/community/file/1162007334570358092) 
 
-### Instalação
+### Icons:
+- [Icons8](https://icons8.com/) 
 
-```
-npm install
-```
+### MindMap:
+- [Miro](https://miro.com/pt/)
+## Feedback 📖
+
+Se você tiver algum feedback, por favor nos deixe saber por meio de richardjosephace1960@gmail.com
+
